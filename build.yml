@@ -1,0 +1,27 @@
+--- 
+extensions: 
+- json
+- barcode
+name: barcode-signature
+capabilities: 
+- camera
+wp: 
+  productid: feeb1b70-d13e-012e-2d10-60c54789b794
+bbver: 4.6
+sdk: /Users/bhanu/.gems/gems/rhodes-3.1.0
+applog: rholog.txt
+build: debug
+wmsdk: Windows Mobile 6 Professional SDK (ARMV4I)
+version: 1.0
+symbian: 
+  uid: "0xebe3152e"
+vendor: rhomobile
+sdkversion: 3.1.0
+iphone: 
+  BundleURLScheme: barcode-signature
+  provisionprofile: 
+  BundleIdentifier: com.rhomobile.barcode-signature
+  sdk: iphonesimulator4.3
+  entitlements: 
+  codesignidentity: 
+  configuration: Release

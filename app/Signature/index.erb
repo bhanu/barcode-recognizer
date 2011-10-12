@@ -1,0 +1,33 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <h1>Signatures</h1>
+    <a href="<%= Rho::RhoConfig.start_path %>" class="ui-btn-left" data-icon="home" data-direction="reverse">Home</a>
+    <a href="<%= url_for :action => :new %>" class="ui-btn-right" data-icon="plus">New</a>
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview">
+          <li>
+            <a href="<%= url_for :action => :new %>">
+                <span class="title">Capture Signature</span>
+                <span class="disclosure_indicator"></span>
+            </a>
+          </li>
+      
+      <% @signatures.each do |signature| %>
+          <li>
+            <img src="<%= signature.signature_uri%>" width="300px"></img>
+          </li>
+          <li>
+            <a href="<%= url_for :action => :delete, :id => signature.object %>">
+                <span class="title">Delete Signature</span>
+                <span class="disclosure_indicator"></span>
+            </a>
+          </li>
+      
+      <% end %>
+    </ul>
+  </div>
+
+</div>
