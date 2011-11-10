@@ -45,7 +45,7 @@ class ScannerController < Rho::RhoController
            show_barcode_info(barcode)
       end 
       if status == 'cancel'
-           Alert.show_popup  ('Barcode taking was canceled !')··
+           Alert.show_popup('Barcode taking was canceled !')
       end 
       redirect :action => :index
   end 
