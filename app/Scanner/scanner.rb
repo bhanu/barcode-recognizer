@@ -6,5 +6,5 @@ class Scanner
   # Uncomment the following line to enable sync with Scanner.
   # enable :sync
 
-  #add model specifc code here
+  property :image_uri, :blob
 end
